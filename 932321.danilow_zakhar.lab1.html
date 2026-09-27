@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .picture_holder {
+            width: 100%;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    
+    <title>О себе</title>
+</head>
+
+<body>
+    <header>
+        <h2>Данилов Захар</h2>
+        <p>Языковой энтузиаст и переводчик</p>
+    </header>
+
+<main>
+    <section>
+        <h2>Навыки</h2>
+        <ul>
+            <li>6-летнее изучение немецкого языка до уровня B1</li>
+            <li>Практика немецкого языка с носителями в рамках смены Sommercamp</li>
+            <li>Непрофессиональный художественный перевод русскоязычных стихотворений на английский</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Проекты</h2>
+        <ol>
+            <li>Обучающий бот для школьников, сдающих ЕГЭ по английскому (<i>в перспективе</i>)</li>
+            <li>Кураторство на смене языкового лагеря Sommercamp</li>
+            <li>Перевод и субтитрование англоязычных образовательных лекций и онлайн-курсов</li>
+        </ol>
+    </section>
+
+    <div class="picture_holder">
+        <img src="avatar.jpg" alt="Я" width="200" height="250">
+    </div>
+
+    <section>
+        <h2>Обратная связь</h2>
+        <form action="" method="post" style="display: flex; flex-direction: column; gap: 8px;">
+            <p>
+                <label for="name">Имя:</label>
+                <input type="text" name="name" placeholder="Введите имя">
+            </p>
+            <p>
+              <label for="email">Email:</label>  
+              <input type="email" name="email" placeholder="something@mail.com">
+            </p>
+            <p>
+                <label for="message">Сообщение:</label>
+                <textarea name="message" placeholder="Введите сообщение..."></textarea>
+            </p>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <aside>
+        <h2>Перспективы изучения языков</h2>
+        <p>Английский <b>B2</b>, немецкий <b>B2</b>, иврит</p>
+    </aside>
+</main>
+
+<footer>
+    <address>
+        Контакт для связи: <a href="zahar5danilow@gmail.com">zahar5danilow@gmail.com</a>
+    </address>
+    <p>Copyright © 2026.</p>
+</footer>
+
+</body>
+</html>

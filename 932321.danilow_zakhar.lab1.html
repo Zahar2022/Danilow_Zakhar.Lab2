@@ -23,6 +23,7 @@
     <header>
         <h2>Данилов Захар</h2>
         <p>Языковой энтузиаст и переводчик</p>
+        <span id="langSwitch" title="Наведите для переключения темы">RU / ENG</span>
     </header>
 
 <main>
@@ -53,15 +54,15 @@
         <form action="" method="post" style="display: flex; flex-direction: column; gap: 8px;">
             <p>
                 <label for="name">Имя:</label>
-                <input type="text" name="name" placeholder="Введите имя">
+                <input type="text" id = "name" name="name" placeholder="Введите имя">
             </p>
             <p>
               <label for="email">Email:</label>  
-              <input type="email" name="email" placeholder="something@mail.com">
+              <input type="email" id = "email" name="email" placeholder="something@mail.com">
             </p>
             <p>
                 <label for="message">Сообщение:</label>
-                <textarea name="message" placeholder="Введите сообщение..."></textarea>
+                <textarea id = "message" name="message" placeholder="Введите сообщение..."></textarea>
             </p>
             <button type="submit">Отправить</button>
         </form>
@@ -79,6 +80,12 @@
     </address>
     <p>Copyright © 2026.</p>
 </footer>
+
+<script>
+    const sw = document.getElementById('langSwitch');
+    sw.addEventListener('mouseenter', () => {document.documentElement.classList.add('eng');});
+    sw.addEventListener('mouseleave', () => {document.documentElement.classList.remove('eng');});
+</script>
 
 </body>
 </html>
